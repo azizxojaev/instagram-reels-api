@@ -9,8 +9,8 @@ from rest_framework import status
 
 
 class ExampleApiView(APIView):
-    pass
     # permission_classes = [IsAuthenticated]
+    pass
 
 
 class ReelsApiView(ExampleApiView):

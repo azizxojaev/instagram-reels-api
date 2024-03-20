@@ -9,13 +9,19 @@ button {
 }
 body {
   font-size: 12px;
+  background-color: #1a1a1a;
 }
-section {
+.section {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 0.5s ease;
   background-color: #1a1a1a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 button {
   background: transparent;
@@ -28,7 +34,6 @@ button {
 .reel__container {
   height: 629.76px;
   width: 354.24px;
-  background: url(https://i.imgur.com/jg6HwrR.gif) no-repeat center;
   background-size: cover;
   border-radius: 10px;
   padding: 1rem;
@@ -104,4 +109,16 @@ button {
   display: flex;
   align-items: center;
   margin-left: -0.4rem;
+}
+
+.active {
+  transform: translateY(0);
+}
+
+.next {
+  transform: translateY(-100%);
+}
+
+.prev {
+  transform: translateY(100%);
 }
